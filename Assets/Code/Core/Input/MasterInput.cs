@@ -12,9 +12,7 @@ namespace RoM.Code.Core.Input
         [field: SerializeField] public Vector2 Look { get; private set; }
         [field: SerializeField] public bool Sprint { get; private set; }
         [field: SerializeField] public bool Jump { get; private set; }
-
-        [field: SerializeField] public bool IsControlDisabled { get; private set; }
-
+        
         protected CommonInput _playerInput;
 
 
@@ -46,11 +44,8 @@ namespace RoM.Code.Core.Input
             _playerInput.Player.Sprint.canceled += OnSprintCanceled;
             _playerInput.Player.Jump.canceled += OnJumpCanceled;
         }
-
-
-        public void Enable() => IsControlDisabled = false;
-
-        public void Disable() => IsControlDisabled = true;
+        
+        
         private void OnJumpCanceled(InputAction.CallbackContext obj) => Jump = false;
 
         private void OnLookCanceled(InputAction.CallbackContext obj) => Look = Vector2.zero;

@@ -353,10 +353,6 @@ namespace Mirror
 #endif
 
 #if onlySyncOnChange_BANDWIDTH_SAVING
-                if (positionChanged)
-                {
-                    Debug.Log("Changed");
-                }
                 RpcServerToClientSync(
                     // only sync what the user wants to sync
                     syncPosition && positionChanged ? snapshot.position : default(Vector3?),

@@ -1,7 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6953c03f-1f1b-4710-83dc-33c5cd48bfe5" name="Changes" comment="" />
+    <list default="true" id="6953c03f-1f1b-4710-83dc-33c5cd48bfe5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Clients/PlayerSetup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/DI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/DI/Installers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/DI/Installers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Initialization.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/MessagePipe.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/MessagePipe/EventKeys.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/MessagePipe/EventKeys/PlayerCharacterSpawned.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/MessagePipe/EventKeys/PlayerCharacterSpawned.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/MessagePipe/Network.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Mirror.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Mirror/RoMNetworkManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Mirror/RoMNetworkManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Services.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Services/BuiltInPrefabCloner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Services/BuiltInPrefabCloner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Services/IAssetProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/Services/IAssetProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Mirror.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/ICameraRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/ICameraRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/IHorizontalMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/IHorizontalMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/IVerticalMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/IVerticalMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/Local.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterFacade.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterForwardingCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterForwardingCamera.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/Remote.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Editor/EditorScriptsHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Editor/EditorScriptsHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/StartMultiplayerPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/StartMultiplayerPage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/UIService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/UIService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/EditorHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/Mirror.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/Mirror/AssignNetworkBehavioursAddedInRuntime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/Mirror/AssignNetworkBehavioursAddedInRuntime.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/Mirror/IRuntimeAddableNetworkBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils/Mirror/IRuntimeAddableNetworkBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/CustomCode.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/CustomCode/NetworkIdentityUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/CustomCode/NetworkIdentityUtility.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Clients/PlayerInstance.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Clients/PlayerInstance.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Clients/PlayerSetup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/AppInitialization.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/AppInitialization.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/Steps.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/Steps/BaseInitializationStep.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/Steps/BaseInitializationStep.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/Steps/Test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Infrastructure/AppInitialization/Steps/Test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Input/MasterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Input/MasterInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation_LocalPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation_LocalPlayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/HorizontalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/HorizontalMovement_LocalPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/HorizontalMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/HorizontalMovement_LocalPlayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterFacade.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/VerticalMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/VecticalMovement_LocalPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/VerticalMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/VecticalMovement_LocalPlayer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mirror/Components/NetworkTransform2k/NetworkTransformBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mirror/Components/NetworkTransform2k/NetworkTransformBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/NetworkBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/NetworkBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerInstance.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerInstance.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Footstep_10.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Land.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Sfx/Player_Land.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Scenes/Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +134,34 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/VerticalMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/a2/ce5bb3b0/SceneManagerAPI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/IInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/VContainerSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/1e/c769c18a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation_LocalPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/VecticalMovement_LocalPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/505e2727829b47378da88cfaaa7da8809200/2a/753d7794/PlayerAnimator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/09/86d56b3c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/5c/e30080af/EditorUserBuildSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Plugins/UI/VirtualMouseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/ed/e65f2ac2/Editor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ExtraInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/52/88295df7/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.6/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/06/2472c0ab/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/9c/dcee2220/NamedBuildTarget.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bde651842a8a47ed9eac63e38dd3a6f826c00/34/7e8535dd/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ContainerBuilderUnityExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/4f/18ac1501/StandaloneBuildSubtarget.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/LifetimeScope.AwakeScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/0b/024e2590/BuildOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/LifetimeScope.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/a7/1ccfe61c/Collider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ActionInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/01/152c7cb9/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,12 +175,16 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.5060729" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/builds\Project-RoM.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -56,10 +203,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16536">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16536" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -88,14 +235,41 @@
       <workItem from="1651577107616" duration="5432000" />
       <workItem from="1651608755404" duration="666000" />
       <workItem from="1651948341169" duration="2031000" />
+      <workItem from="1651952326405" duration="6356000" />
+      <workItem from="1652005807158" duration="714000" />
+      <workItem from="1652015714268" duration="11293000" />
+      <workItem from="1652046480209" duration="74000" />
+      <workItem from="1652047087362" duration="89000" />
+      <workItem from="1652194935190" duration="3910000" />
+      <workItem from="1652361013447" duration="2806000" />
+      <workItem from="1652443702605" duration="1270000" />
+      <workItem from="1652445019984" duration="17499000" />
+      <workItem from="1652528766840" duration="6903000" />
+      <workItem from="1652731402547" duration="5335000" />
+      <workItem from="1652808060638" duration="10506000" />
+      <workItem from="1652868954311" duration="1605000" />
+      <workItem from="1652957718675" duration="17346000" />
+      <workItem from="1653065930613" duration="9443000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -104,54 +278,94 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Core/Input/MasterInput.cs</url>
-          <line>56</line>
+          <line>51</line>
           <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Input\MasterInput.cs" initialLine="48" containingFunctionPresentation="method 'OnSprintCanceled'" />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Plugins/Mirror/Components/NetworkTransform2k/NetworkTransformBase.cs</url>
-          <line>677</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Plugins\Mirror\Components\NetworkTransform2k\NetworkTransformBase.cs" initialLine="673" containingFunctionPresentation="method 'OnSerialize'">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/Transports/KCP/MirrorTransport/KcpTransport.cs</url>
+          <line>149</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Plugins\Mirror\Runtime\Transports\KCP\MirrorTransport\KcpTransport.cs" initialLine="149" containingFunctionPresentation="method 'ClientConnect'">
             <startOffsets>
-              <option value="32453" />
-              <option value="32471" />
+              <option value="7318" />
             </startOffsets>
             <endOffsets>
-              <option value="32470" />
-              <option value="32522" />
+              <option value="7319" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Plugins/Mirror/Components/NetworkTransform2k/NetworkTransformBase.cs</url>
-          <line>692</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Plugins\Mirror\Components\NetworkTransform2k\NetworkTransformBase.cs" initialLine="688" containingFunctionPresentation="method 'OnDeserialize'">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/Mirror/Runtime/NetworkManager.cs</url>
+          <line>245</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Plugins\Mirror\Runtime\NetworkManager.cs" initialLine="245" containingFunctionPresentation="method 'SetupServer'">
             <startOffsets>
-              <option value="33121" />
-              <option value="33139" />
+              <option value="11929" />
             </startOffsets>
             <endOffsets>
-              <option value="33138" />
-              <option value="33192" />
+              <option value="11959" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Plugins/Mirror/Components/NetworkTransform2k/NetworkTransformBase.cs</url>
-          <line>263</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Plugins\Mirror\Components\NetworkTransform2k\NetworkTransformBase.cs" initialLine="263" containingFunctionPresentation="method 'OnServerToClientSync'">
+          <url>file://$PROJECT_DIR$/Assets/Code/Utils/Mirror/AssignNetworkBehavioursAddedInRuntime.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Utils\Mirror\AssignNetworkBehavioursAddedInRuntime.cs" initialLine="40" containingFunctionPresentation="method 'AssignNetworkIdentityToNetworkBehaviours'">
             <startOffsets>
-              <option value="13427" />
+              <option value="1537" />
             </startOffsets>
             <endOffsets>
-              <option value="13440" />
+              <option value="1591" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/Clients/PlayerSetup.cs</url>
+          <line>88</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Clients\PlayerSetup.cs" initialLine="86" containingFunctionPresentation="method 'ConstructPlayer'">
+            <startOffsets>
+              <option value="2752" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2827" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Utils/Mirror/AssignNetworkBehavioursAddedInRuntime.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Utils\Mirror\AssignNetworkBehavioursAddedInRuntime.cs" initialLine="22" containingFunctionPresentation="method 'SubscribeOnLocalPlayerDispatch'">
+            <startOffsets>
+              <option value="699" />
+            </startOffsets>
+            <endOffsets>
+              <option value="837" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Editor/CustomBuilder.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Editor\CustomBuilder.cs" initialLine="16" containingFunctionPresentation="method 'PerformBuildWindows_Server'">
+            <startOffsets>
+              <option value="1214" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1284" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#UnityEngine.Component" memberName="gameObject" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
