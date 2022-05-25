@@ -2,7 +2,7 @@
 
 namespace RoM.Code.Core.Player
 {
-    public class CameraRotation_LocalPlayer : ICameraRotation
+    public class CameraRotation : ICameraRotation
     {
         private const float Threshold = 0.01f;
         
@@ -19,7 +19,7 @@ namespace RoM.Code.Core.Player
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
 
-        public CameraRotation_LocalPlayer(GameObject cinemachineCameraLookTarget)
+        public CameraRotation(GameObject cinemachineCameraLookTarget)
         {
             CinemachineCameraTarget = cinemachineCameraLookTarget;
         }

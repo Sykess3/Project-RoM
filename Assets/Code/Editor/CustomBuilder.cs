@@ -11,7 +11,7 @@ namespace RoM.Code.Editor
         public const string SERVER_EXE_PATH_RELATIVE_TO_PROJECT_PATH_WINDOWS = "./builds/windows/server/Server.exe";
         public const string CLIENT_EXE_PATH_RELATIVE_TO_PROJECT_PATH_WINDOWS = "./builds/windows/client/RoM.exe";
         
-        public static readonly string ScenesInBuildPath = Application.dataPath + "/Scenes/BuildExclusive";
+        public static readonly string ScenesInBuildPath = Application.dataPath + "/Scenes/BuildInclusive";
 
         public static readonly string ServerExeFullPath =
             EditorScriptsHelper.ProjectPath + SERVER_EXE_PATH_RELATIVE_TO_PROJECT_PATH_WINDOWS.Substring(1);

@@ -2,7 +2,7 @@
 
 namespace RoM.Code.Core.Player
 {
-    public class VecticalMovement_LocalPlayer : IVerticalMovement
+    public class VerticalMovement : IVerticalMovement
     {
         [Tooltip("Useful for rough ground")] 
         private float _groundedOffset = -0.14f;
@@ -40,7 +40,7 @@ namespace RoM.Code.Core.Player
         public bool Grounded { get; private set; }
         public bool IsInJump { get; private set; }
 
-        public VecticalMovement_LocalPlayer(Transform transform, Animator animator)
+        public VerticalMovement(Transform transform, Animator animator)
         {
             _transform = transform;
             _animator = animator;

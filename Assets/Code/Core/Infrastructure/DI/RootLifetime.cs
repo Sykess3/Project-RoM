@@ -10,15 +10,6 @@ namespace RoM.Code.Core.Infrastructure
     public class RootLifetime : LifetimeScope
     {
         [SerializeField] private RootLifetimeMonoBehaviours _rootLifetimeMonoBehaviours;
-        [Space]
-        [SerializeField] private StartMultiplayerPage _startMultiplayerPage;
-
-        protected override void Awake()
-        {
-            _startMultiplayerPage.gameObject.SetActive(false);
-            base.Awake();
-        }
-
         protected override void Configure(IContainerBuilder builder)
         {
             var installers = new ExtraInstaller()
@@ -32,15 +23,9 @@ namespace RoM.Code.Core.Infrastructure
             {
                 var publisher = resolver.Resolve<ISubscriber<PlayerCharacterSpawned>>();
                 publisher.Subscribe(x => Debug.Log(nameof(PlayerCharacterSpawned)));
-                ShowChooseNetworkRole(resolver);
             });
             
             installers.Install(builder);
-        }
-
-        private void ShowChooseNetworkRole(IObjectResolver resolver)
-        {
-            _startMultiplayerPage.gameObject.SetActive(true);
         }
     }
     

@@ -1,10 +1,8 @@
 ﻿using System;
-using Mirror;
 using RoM.Code.Core.Infrastructure;
 using RoM.Code.Core.Infrastructure.Mirror;
 using UnityEngine;
 using UnityEngine.UI;
-using VContainer;
 
 namespace RoM.Code.UI
 {
@@ -14,11 +12,19 @@ namespace RoM.Code.UI
         [SerializeField] private Button _client;
         [SerializeField] private Button _host;
         [SerializeField] private RoMNetworkManager _network;
+        [SerializeField] private RootLifetime _container;
+        
 
         private void Start()
         {
+#if UNITY_EDITOR
+            return;
+#endif
+            
 #if UNITY_SERVER
-        OnServerClick();
+            OnServerClick();
+#else
+            OnClientClick();
 #endif
         }
 
@@ -34,6 +40,7 @@ namespace RoM.Code.UI
             _network.StartClient();
             print("======CLIENT CONNECTED======");
             gameObject.SetActive(false);
+            _container.Build();
         }
 
         private void OnHostClick()
@@ -41,6 +48,7 @@ namespace RoM.Code.UI
             _network.StartHost();
             print("======HOST STARTED======");
             gameObject.SetActive(false);
+            _container.Build();
         }
 
         private void OnServerClick()
@@ -48,6 +56,7 @@ namespace RoM.Code.UI
             _network.StartServer();
             print("======SERVER STARTED======");
             gameObject.SetActive(false);
+            _container.Build();
         }
     }
 }

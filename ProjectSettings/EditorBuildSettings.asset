@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/BuildExclusive/Boot.unity
     guid: 4750ffd126ed3bb4fb777a85a70bf1b5
   - enabled: 0
-    path: Assets/StarterAssets/ThirdPersonController/Scenes/Playground.unity
+    path: Assets/Scenes/BuildInclusive/Playground.unity
     guid: e9017d5f96b9f09489b4b37e1d6eb914
   - enabled: 0
-    path: Assets/Scenes/BuildInclusive/TestScene.unity
+    path: Assets/Scenes/BuildExclusive/TestScene.unity
     guid: e0ca47c3b9d4b5d49a7534d28cbd770f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

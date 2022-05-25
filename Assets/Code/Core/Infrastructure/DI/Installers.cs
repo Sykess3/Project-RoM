@@ -24,15 +24,14 @@ namespace RoM.Code.Core.Infrastructure
     [System.Serializable]
     public class RootLifetimeMonoBehaviours : IInstaller
     {
-        [field: SerializeField] public Camera Camera { get; set; }
+        [SerializeField] private Camera _camera;
         [SerializeField] private RoMNetworkManager _networkManager;
         
-
         public void Install(IContainerBuilder builder)
         {
             builder.UseComponents(components =>
             {
-                components.AddInstance(Camera);
+                components.AddInstance(_camera);
                 components.AddInstance(_networkManager);
             });
         }

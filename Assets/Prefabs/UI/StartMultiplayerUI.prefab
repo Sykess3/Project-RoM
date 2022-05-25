@@ -54,6 +54,8 @@ MonoBehaviour:
   _server: {fileID: 8222374390961115759}
   _client: {fileID: 145846665698553279}
   _host: {fileID: 5937905981472361317}
+  _network: {fileID: 0}
+  _container: {fileID: 0}
 --- !u!1 &2306656555424045246
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,11 +76,11 @@ namespace RoM.Code.Core.Clients
         private PlayerCharacterFacade ConstructPlayer()
         {
             var playerCharacterFacade = gameObject.AddComponent<PlayerCharacterFacade>();
-            playerCharacterFacade.CameraRotation = new CameraRotation_LocalPlayer(_cinemachineCameraLookTarget);
+            playerCharacterFacade.CameraRotation = new CameraRotation(_cinemachineCameraLookTarget);
             playerCharacterFacade.HorizontalMovement =
-                new HorizontalMovement_LocalPlayer(Camera.main, transform, GetComponent<Animator>());
+                new HorizontalMovement(Camera.main, transform, GetComponent<Animator>());
             playerCharacterFacade.VerticalMovement =
-                new VecticalMovement_LocalPlayer(transform, GetComponent<Animator>());
+                new VerticalMovement(transform, GetComponent<Animator>());
 
             var addedNetworkBehaviours = new NetworkBehaviour[]
             {

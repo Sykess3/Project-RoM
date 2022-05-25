@@ -2,7 +2,7 @@
 
 namespace RoM.Code.Core.Player
 {
-	public class HorizontalMovement_LocalPlayer : IHorizontalMovement
+	public class HorizontalMovement : IHorizontalMovement
 	{
 	    [Tooltip("Move speed of the character in m/s")]
         [SerializeField] private float MoveSpeed = 2.0f;
@@ -29,7 +29,7 @@ namespace RoM.Code.Core.Player
         private float _targetRotation;
         private float _animationBlend;
         
-        public HorizontalMovement_LocalPlayer(Camera camera, Transform transform, Animator animator)
+        public HorizontalMovement(Camera camera, Transform transform, Animator animator)
         {
 	        _mainCamera = camera;
 	        _transform = transform;
