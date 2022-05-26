@@ -1,5 +1,8 @@
-﻿using RoM.Code.Core.Enemy;
+﻿using Code.Utils;
+using RoM.Code.Core.Enemy;
 using RoM.Code.Core.Enemy.CommonStates;
+using RoM.Code.Utils;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace RoM.Code.Core.Enemies.CommonStates
@@ -8,13 +11,13 @@ namespace RoM.Code.Core.Enemies.CommonStates
     {
         private readonly NavMeshAgent _agent;
         private readonly IFollower _follower;
-
-        public AgentMoveToTarget(NavMeshAgent agent, IFollower follower)
-        {
-            _agent = agent;
+        
+        public AgentMoveToTarget(NavMeshAgent agent,
+            IFollower follower)
+        { _agent = agent;
             _follower = follower;
         }
-        
+
         public void Tick()
         {
             _agent.SetDestination(_follower.Target.position);
@@ -27,7 +30,7 @@ namespace RoM.Code.Core.Enemies.CommonStates
 
         public void OnExit()
         {
-            
+            _follower.Target = null;
         }
     }
 }

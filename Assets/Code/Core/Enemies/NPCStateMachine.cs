@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RoM.Code.Core.Enemies;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,6 +13,7 @@ namespace RoM.Code.Core.Enemy
         private Dictionary<Type, List<Transition>> _transitions = new Dictionary<Type, List<Transition>>();
         private List<Transition> _currentTransitions = new List<Transition>();
         private List<Transition> _anyTransitions = new List<Transition>();
+        private HashSet<IDisposable> _toCleanup = new HashSet<IDisposable>();
 
         private static List<Transition> EmptyTransitions = new List<Transition>(0);
 
@@ -22,6 +24,14 @@ namespace RoM.Code.Core.Enemy
                 SetState(transition.To);
 
             _currentState?.Tick();
+        }
+
+        private void OnDestroy()
+        {
+            foreach (var disposable in _toCleanup)
+            {
+                disposable.Dispose();
+            }
         }
 
         public void SetState(INPCState state)
@@ -48,6 +58,14 @@ namespace RoM.Code.Core.Enemy
             }
 
             transitions.Add(new Transition(to, predicate));
+        }
+
+        public void AddTransition(INPCState from, INPCState to, INPCTransition transition)
+        {
+            if (transition is IDisposable disposable) 
+                _toCleanup.Add(disposable);
+            
+            AddTransition(from, to, transition.CanTransit);
         }
 
         public void AddAnyTransition(INPCState state, Func<bool> predicate)

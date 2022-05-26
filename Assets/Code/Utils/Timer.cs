@@ -1,18 +1,23 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Code.Utils
 {
     public class Timer
     {
-        public bool IsReached { get; private set; }
-        public async UniTask AwaitToEnd(float time)
+        private float _goal;
+        private bool _isBreak = true;
+        public bool IsReached => _goal <= Time.time && !_isBreak;
+        public void Start(float time)
         {
-            IsReached = false;
-            
-            await UniTask.Delay(TimeSpan.FromSeconds(time), ignoreTimeScale: false);
+            _goal = Time.time + time;
+            _isBreak = false;
+        }
 
-            IsReached = true;
+        public void Break()
+        {
+            _isBreak = true;
         }
     }
 }
