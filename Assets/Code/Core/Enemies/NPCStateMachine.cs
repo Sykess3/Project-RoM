@@ -67,6 +67,35 @@ namespace RoM.Code.Core.Enemy
             
             AddTransition(from, to, transition.CanTransit);
         }
+        /// <summary>
+        /// All transitions passed in argument must be true in the same time
+        /// </summary>
+        public void AddTransition(INPCState from, INPCState to, params INPCTransition[] transitions)
+        {
+            for (int i = 0; i < transitions.Length; i++)
+            {
+                if (transitions[i] is IDisposable disposable) 
+                    _toCleanup.Add(disposable);   
+            }
+
+            AddTransition(from, to, IsAllTrue(transitions));
+
+            Func<bool> IsAllTrue(INPCTransition[] npcTransitions)
+            {
+                return () =>
+                {
+                    foreach (var npcTransition in npcTransitions)
+                    {
+                        if (!npcTransition.CanTransit())
+                        {
+                            return false;
+                        }
+                    }
+
+                    return true;
+                };
+            }
+        }
 
         public void AddAnyTransition(INPCState state, Func<bool> predicate)
         {
