@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6953c03f-1f1b-4710-83dc-33c5cd48bfe5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gameplay/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gameplay/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BuildInclusive/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BuildInclusive/Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +29,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.1/Editor/Extensions/TrackExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/a2/ce5bb3b0/SceneManagerAPI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/IInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/VContainerSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/1e/c769c18a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/bf/a5abd18a/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/VerticalMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/505e2727829b47378da88cfaaa7da8809200/2a/753d7794/PlayerAnimator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -36,6 +48,8 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ExtraInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/52/88295df7/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.6/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/80/3498aed4/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Editor/Diagnostics/VContainerDiagnosticsWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/06/2472c0ab/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/9c/dcee2220/NamedBuildTarget.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,6 +60,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/0b/024e2590/BuildOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/LifetimeScope.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/a3/9a68dd1f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/a7/1ccfe61c/Collider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ActionInstaller.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/01/152c7cb9/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -80,20 +95,20 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13456">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17556">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13456" />
+      <option name="pid" value="17556" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13456">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17556">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13456" />
+      <option name="pid" value="17556" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -143,7 +158,8 @@
       <workItem from="1653387474798" duration="1301000" />
       <workItem from="1653403534568" duration="6231000" />
       <workItem from="1653506292749" duration="628000" />
-      <workItem from="1653571568851" duration="13607000" />
+      <workItem from="1653571568851" duration="23345000" />
+      <workItem from="1653643162719" duration="6097000" />
     </task>
     <servers />
   </component>
@@ -216,32 +232,6 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Utils/TriggerObservable.cs</url>
-          <line>17</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Utils\TriggerObservable.cs" initialLine="17" containingFunctionPresentation="method 'OnTriggerExit'">
-            <startOffsets>
-              <option value="394" />
-            </startOffsets>
-            <endOffsets>
-              <option value="416" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs</url>
-          <line>96</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\CommonStates\Transitions\TriggerTransition.cs" initialLine="95" containingFunctionPresentation="method 'OnExited'">
-            <startOffsets>
-              <option value="2998" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3026" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs</url>
           <line>23</line>
           <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\NPCStateMachine.cs" initialLine="23" containingFunctionPresentation="method 'LateUpdate'">
@@ -253,6 +243,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Temp\PerfomanceCheck.cs" initialLine="18" containingFunctionPresentation="method 'AngleMethod'">
+            <startOffsets>
+              <option value="365" />
+            </startOffsets>
+            <endOffsets>
+              <option value="366" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\CommonStates\Transitions\FieldOfViewChek.cs" initialLine="53" containingFunctionPresentation="method 'IsPlayerInFoV'">
+            <startOffsets>
+              <option value="1789" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1959" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs</url>
+          <line>49</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\CommonStates\Transitions\FieldOfViewChek.cs" initialLine="49" containingFunctionPresentation="method 'IsPlayerInFoV'">
+            <startOffsets>
+              <option value="1503" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1600" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

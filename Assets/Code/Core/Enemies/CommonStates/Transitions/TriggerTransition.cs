@@ -11,20 +11,20 @@ namespace RoM.Code.Core.Enemies.CommonStates.Transitions
         {
             private readonly Func<Collider, bool> _extraCheck;
             private readonly TriggerObservable _trigger;
-            private readonly float _additionTime;
+            private readonly float _delayTime;
             private readonly Timer _timer;
 
-            public OnEnter(TriggerObservable trigger, float additionTime = 0)
+            public OnEnter(TriggerObservable trigger, float delayTime = 0)
             {
                 _trigger = trigger;
-                _additionTime = additionTime;
+                _delayTime = delayTime;
                 _timer = new Timer();
                 _trigger.Entered += OnEntered;
                 _trigger.Exited += OnExited;
             }
 
-            public OnEnter(TriggerObservable trigger, Func<Collider, bool> extraCheck, float additionTime = 0)
-                : this(trigger, additionTime)
+            public OnEnter(TriggerObservable trigger, Func<Collider, bool> extraCheck, float delayTime = 0)
+                : this(trigger, delayTime)
             {
                 _extraCheck = extraCheck;
             }
@@ -40,7 +40,7 @@ namespace RoM.Code.Core.Enemies.CommonStates.Transitions
                 }
                 else
                 {
-                    _timer.Start(_additionTime);
+                    _timer.Start(_delayTime);
                 }
             }
 
@@ -54,7 +54,7 @@ namespace RoM.Code.Core.Enemies.CommonStates.Transitions
             {
                 if (IsExtraCheckCorrect(obj))
                 {
-                    _timer.Start(_additionTime);
+                    _timer.Start(_delayTime);
                 }
             }
 
@@ -69,22 +69,22 @@ namespace RoM.Code.Core.Enemies.CommonStates.Transitions
         {
             private readonly Func<Collider, bool> _extraCheck;
             private readonly TriggerObservable _trigger;
-            private readonly float _additionTime;
+            private readonly float _delayTime;
             private readonly Timer _timer;
 
             public bool CanTransit() => _timer.IsReached;
 
-            public OnExit(TriggerObservable trigger, float additionTime = 0)
+            public OnExit(TriggerObservable trigger, float delayTime = 0)
             {
                 _trigger = trigger;
-                _additionTime = additionTime;
+                _delayTime = delayTime;
                 _timer = new Timer();
                 _trigger.Entered += OnEntered;
                 _trigger.Exited += OnExited;
             }
 
-            public OnExit(TriggerObservable trigger, Func<Collider, bool> extraCheck, float additionTime = 0)
-                : this(trigger, additionTime)
+            public OnExit(TriggerObservable trigger, Func<Collider, bool> extraCheck, float delayTime = 0)
+                : this(trigger, delayTime)
             {
                 _extraCheck = extraCheck;
             }
@@ -94,7 +94,7 @@ namespace RoM.Code.Core.Enemies.CommonStates.Transitions
 
                 if (IsExtraCheckCorrect(obj))
                 {
-                    _timer.Start(_additionTime);   
+                    _timer.Start(_delayTime);   
                 }
                 else
                 {

@@ -49,6 +49,26 @@ namespace RoM.Code.Core.Enemy
             _currentState.OnEnter();
         }
 
+        public void AddTransition(INPCState from, INPCState to, params Func<bool>[] predicates)
+        {
+            AddTransition(from, to, IsAllTrue(predicates));
+            
+            Func<bool> IsAllTrue(Func<bool>[] predicates)
+            {
+                return () =>
+                {
+                    foreach (var predicate in predicates)
+                    {
+                        if (!predicate())
+                        {
+                            return false;
+                        }
+                    }
+
+                    return true;
+                };
+            }
+        }
         public void AddTransition(INPCState from, INPCState to, Func<bool> predicate)
         {
             if (_transitions.TryGetValue(from.GetType(), out var transitions) == false)
