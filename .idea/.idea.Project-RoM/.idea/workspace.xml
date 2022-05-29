@@ -2,17 +2,229 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6953c03f-1f1b-4710-83dc-33c5cd48bfe5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Animation/AnimatorStateReporter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Animation/AnimatorStateReporter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Animation/IAnimatorStateReader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/Animation/IAnimatorStateReader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/AgentMoveToTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Attack.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Attack.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/IsPlayerInAggroRange.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/IsPlayerInAggroRange.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IAttackable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IAttackable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IDamageable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IDamageable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/TestEnemy/EnemyAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/TestEnemy/EnemyAnimator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Editor/Inspectors.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Editor/Inspectors/NPCStateMachineEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Editor/Inspectors/NPCStateMachineEditor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-RoM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gameplay/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gameplay/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/AgentMoveToTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/AgentMoveToTarget.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/AgentMoveToTarget.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Aggro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Aggro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Aggro.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Aggro.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/IFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/IFollower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/StateMachineAbstractions/IFollower.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/FieldOfViewChek.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/FieldOfViewChek.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/TriggerTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/TriggerTransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Transitions/TriggerTransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/INPCState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/INPCState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/INPCState.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/INPCState.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/INPCTransition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/INPCTransition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/INPCTransition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/INPCTransition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/Monster.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/Enemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/NPCStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/NPCStateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/TestEnemy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/TestEnemy/TestEnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Enemies/TestMonster/TestMonsterStateMachine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/TestEnemy/TestEnemyStateMachine.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Core/Player/PlayerCharacterFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Temp/AgentLinkMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Temp/AgentLinkMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Utils/TriggerObservable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/TriggerObservable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/Boot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BuildExclusive/Boot.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/BuildInclusive/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BuildInclusive/Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/Blue_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/Blue_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/Built-in_RP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/Built-in_RP/BuiltInTriplanar_01_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/Built-in_RP/BuiltInTriplanar_01_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GreyBlue_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GreyBlue_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridBlue_01_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridBlue_01_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridOrange_01_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridOrange_01_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridWhite_01_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/GridWhite_01_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/URP_HDRP_ShaderGraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/URP_HDRP_ShaderGraph/ShaderGraphGrid_01_Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Materials/URP_HDRP_ShaderGraph/ShaderGraphGrid_01_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Box_350x250x200_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Box_350x250x200_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Box_350x250x300_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Box_350x250x300_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ground_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ground_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ramp_100x100x200_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ramp_100x100x200_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ramp_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Ramp_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Stairs_200x100x200_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Stairs_200x100x200_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Stairs_650_400_300_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Stairs_650_400_300_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Structure_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Structure_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Tunnel_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Tunnel_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Wall_Mesh.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Models/Wall_Mesh.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Skybox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Skybox/SkyboxLite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Skybox/SkyboxLite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Skybox/SkyboxLiteWarm.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Skybox/SkyboxLiteWarm.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_BaseMap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_BaseMap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_Emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_Emissive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_01_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_02_BaseMap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Art/Textures/Grid_02_BaseMap.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_100x100x100_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_100x100x100_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_350x250x200_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_350x250x200_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_350x250x300_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Box_350x250x300_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Environment_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Environment_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Ramp_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Ramp_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Stairs_200x100x200_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Stairs_200x100x200_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Stairs_650_400_300_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Stairs_650_400_300_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Structure_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Structure_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Tunnel_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Tunnel_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Wall_Prefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Prefabs/Wall_Prefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/RenderPipelineProfiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/RenderPipelineProfiles/StarterAssetsHDRPVolumeProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/RenderPipelineProfiles/StarterAssetsHDRPVolumeProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/Built-in_RP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/Built-in_RP/ArmatureShader.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/Built-in_RP/ArmatureShader.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/Built-in_RP/Triplanar.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/Built-in_RP/Triplanar.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/URP_HDRP_ShaderGraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/URP_HDRP_ShaderGraph/UrpTriplanar.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Environment/Shaders/URP_HDRP_ShaderGraph/UrpTriplanar.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/Readme.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/StarterAssets_Documentation_v1.1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/StarterAssets_Documentation_v1.1.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--InAir.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--Jump.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Jump--Jump.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N_Land.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_N_Land.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Run_S.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N_Land.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Locomotion--Walk_N_Land.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/Stand--Idle.anim.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Animations/StarterAssetsThirdPerson.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Arms.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Arms.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Body.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Body.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Legs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/Built-in_RP/M_ArmatureColor_Legs.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Arms.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Arms.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Body.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Body.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Legs.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Materials/M_Armature_Legs.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Models/Armature.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Models/Armature.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_AlbedoTransparency.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_AlbedoTransparency.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_RGB.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Arms_RGB.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_AlbedoTransparency.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_AlbedoTransparency.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_RGB.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Body_RGB.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_AlbedoTransparency.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_AlbedoTransparency.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_MetallicSmoothness.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_MetallicSmoothness.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_Normal.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_Normal.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_RGB.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Character/Textures/Armature_Legs_RGB.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/MainCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentArmature_Unpack.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentArmature_Unpack.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/NestedParentCapsule_Unpack.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerArmature.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerFollowCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/license.txt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,13 +247,16 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/VContainerSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/1e/c769c18a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/bf/a5abd18a/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.7/Editor/VisualScripting.Flow/Invocations/MemberInvocationInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/CameraRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Player/VerticalMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/505e2727829b47378da88cfaaa7da8809200/2a/753d7794/PlayerAnimator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/09/86d56b3c/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/Enemies/INPCState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Core/NPCs/StateMachine/INPCState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ai.navigation@1.0.0-exp.4/Runtime/NavMeshLink.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/5c/e30080af/EditorUserBuildSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/0f/6a0bf9cf/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.5/Editor/BurstAotSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Plugins/UI/VirtualMouseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1135c66e5f4c41a7831fa5798849d8b680e600/ed/e65f2ac2/Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,6 +264,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/52/88295df7/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@12.1.6/Runtime/Debugging/DebugUpdater.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/80/3498aed4/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54aaeeb4a0c44268b84dd17730ea1606ca00/3b/c2448ee8/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Editor/Diagnostics/VContainerDiagnosticsWindow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/06/2472c0ab/Application.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,8 +277,10 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Core/CinemachineVirtualCameraBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/LifetimeScope.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/a3/9a68dd1f/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6073cf49ed704e958b8a66d540dea94846a800/12/552f74bb/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/a7/1ccfe61c/Collider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/jp.hadashikick.vcontainer@1.11.0/Runtime/Unity/ActionInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/823fb226a3f9439cb41fdcb61f9c86a1157600/70/b503f0f8/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a642ad78cd754c97a615f0d9a616a6031a000/01/152c7cb9/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,7 +297,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.506" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.38567072" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
@@ -95,20 +313,20 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17556">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18444">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17556" />
+      <option name="pid" value="18444" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17556">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18444">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="17556" />
+      <option name="pid" value="18444" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -159,7 +377,11 @@
       <workItem from="1653403534568" duration="6231000" />
       <workItem from="1653506292749" duration="628000" />
       <workItem from="1653571568851" duration="23345000" />
-      <workItem from="1653643162719" duration="6097000" />
+      <workItem from="1653643162719" duration="11063000" />
+      <workItem from="1653664866749" duration="5432000" />
+      <workItem from="1653736004211" duration="9974000" />
+      <workItem from="1653764029335" duration="1642000" />
+      <workItem from="1653822457039" duration="11244000" />
     </task>
     <servers />
   </component>
@@ -232,56 +454,17 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/NPCStateMachine.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\NPCStateMachine.cs" initialLine="23" containingFunctionPresentation="method 'LateUpdate'">
+          <url>file://$PROJECT_DIR$/Assets/Code/Core/NPCs/Enemies/CommonStates/Attack.cs</url>
+          <line>89</line>
+          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\NPCs\Enemies\CommonStates\Attack.cs" initialLine="88" containingFunctionPresentation="method 'SphereCast'">
             <startOffsets>
-              <option value="815" />
+              <option value="2674" />
             </startOffsets>
             <endOffsets>
-              <option value="839" />
+              <option value="2752" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Temp/PerfomanceCheck.cs</url>
-          <line>18</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Temp\PerfomanceCheck.cs" initialLine="18" containingFunctionPresentation="method 'AngleMethod'">
-            <startOffsets>
-              <option value="365" />
-            </startOffsets>
-            <endOffsets>
-              <option value="366" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs</url>
-          <line>53</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\CommonStates\Transitions\FieldOfViewChek.cs" initialLine="53" containingFunctionPresentation="method 'IsPlayerInFoV'">
-            <startOffsets>
-              <option value="1789" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1959" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Code/Core/Enemies/CommonStates/Transitions/FieldOfViewChek.cs</url>
-          <line>49</line>
-          <properties documentPath="C:\Unity\Projects\PetProjects\Project-RoM\Assets\Code\Core\Enemies\CommonStates\Transitions\FieldOfViewChek.cs" initialLine="49" containingFunctionPresentation="method 'IsPlayerInFoV'">
-            <startOffsets>
-              <option value="1503" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1600" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="76" />
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,13 +1,14 @@
 ﻿using System;
 using Mirror;
 using RoM.Code.Core.Input;
+using RoM.Code.Core.NPCs.Enemies.StateMachineAbstractions;
 using UnityEngine;
 using EditorHelper = RoM.Code.Utils.EditorHelper;
 
 namespace RoM.Code.Core.Player
 {
     [RequireComponent(typeof(CharacterController), typeof(Animator))]
-    public class PlayerCharacterFacade : NetworkBehaviour
+    public class PlayerCharacterFacade : NetworkBehaviour, IDamageable
     {
         [SerializeField] private CharacterController _controller;
         [SerializeField] private Animator _animator;
@@ -47,6 +48,11 @@ namespace RoM.Code.Core.Player
             Vector3 verticalVelocity = VerticalMovement.GetVelocity(_input.Jump);
 
             _controller.Move(verticalVelocity + horizontalVelocity);
+        }
+
+        public void TakeDamage(float amount)
+        {
+            Debug.Log(amount);
         }
     }
 }

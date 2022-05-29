@@ -25,11 +25,7 @@ namespace RoM.Code.Utils
         {
             if (_sphereCollider == null)
             {
-                var trigger = GetComponentInChildren<TriggerObservable>();
-                if (trigger == null)
-                    return;
-
-                _sphereCollider = trigger.GetComponent<SphereCollider>();
+                _sphereCollider = GetComponent<SphereCollider>();
                 if (_sphereCollider == null)
                     return;
             }

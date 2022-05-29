@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,6 +19,8 @@ namespace RoM.Code.UI
         public OffMeshLinkMoveMethod m_Method = OffMeshLinkMoveMethod.Parabola;
         public AnimationCurve m_Curve = new AnimationCurve();
 
+        public event Action Jumping;
+
         IEnumerator Start()
         {
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
@@ -26,6 +29,7 @@ namespace RoM.Code.UI
             {
                 if (agent.isOnOffMeshLink)
                 {
+                    Jumping?.Invoke();
                     if (m_Method == OffMeshLinkMoveMethod.NormalSpeed)
                         yield return StartCoroutine(NormalSpeed(agent));
                     else if (m_Method == OffMeshLinkMoveMethod.Parabola)

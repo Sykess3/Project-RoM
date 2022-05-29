@@ -6,31 +6,38 @@ namespace RoM.Code.UI
 {
     public class PerfomanceCheck : MonoBehaviour
     {
-        public Transform Transform;
-        private Transform _transform;
+        private Collider[] _collider = new Collider[0];
 
         private void Update()
         {
-            DotProduct();
-            AngleMethod();
+            Capsule();
+            Sphere();
+            Box();
         }
 
-        private void AngleMethod()
+        public void Capsule()
         {
-            var normalized = (Transform.position - _transform.position);
-            Debug.Log(Vector3.Angle(_transform.forward, normalized));
+            for (int i = 0; i < 1000; i++)
+            {
+                Physics.OverlapCapsuleNonAlloc(transform.position, transform.position + Vector3.back * 2, 2, _collider);
+            }
         }
 
-        private void DotProduct()
+        private void Sphere()
         {
-            _transform = transform;
-            var rot = _transform.forward;
-            var vector2 = new Vector2(rot.x, rot.z);
-            var vector3 = new Vector2(Transform.position.x, Transform.position.z);
-            //Debug.Log(transform.forward);
+            for (int i = 0; i < 1000; i++)
+            {
+                Physics.OverlapSphereNonAlloc(transform.position, 2, _collider);
+                Physics.OverlapSphereNonAlloc(transform.position, 2, _collider);
+            }
+        }
 
-            var dot = Vector2.Dot(vector2.normalized, vector3.normalized);
-            //Debug.Log(Mathf.Acos(dot) * Mathf.Rad2Deg);
+        private void Box()
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Physics.OverlapBoxNonAlloc(transform.position, Vector3.one * 2, _collider);
+            }
         }
     }
 }
